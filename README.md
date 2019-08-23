@@ -1,4 +1,7 @@
 # .dotfiles
+![License](https://img.shields.io/github/license/scottyvg/dotfiles.svg)](https://opensource.org/licenses/MIT)
+![GitHub top language](https://img.shields.io/github/languages/top/scottyvg/dotfiles.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/scottyvg/dotfiles.svg)
 
 I use a bare Git repository to manage my dotfiles on various systems. I followed the the [Atlassian Docs](https://www.atlassian.com/git/tutorials/dotfiles) to get this set up.
 
@@ -90,3 +93,18 @@ dotfiles add .bashrc
 dotfiles commit -m "Add bashrc"
 dotfiles push
 ```
+
+** Useful Dotfile Links
+* [StreakyCobra from Hacker News Post](https://news.ycombinator.com/item?id=11070797)
+* [Atlassian Git Bare Repo Dotfile Docs](https://www.atlassian.com/git/tutorials/dotfiles)
+* [Hidden file and hidden directory Wikipedia](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory)
+* [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+* [Paul Irish](https://github.com/paulirish/dotfiles)
+* [Paul Miller](https://github.com/paulmillr/dotfiles)
+
+### System Blue (My favorite solid color mac background color)
+517eb8
+or
+81,126,184
+[NSColor colorWithCalibratedRed:0.320 green:0.496 blue:0.722 alpha:1.00]
+[UIColor colorWithRed:0.318 green:0.494 blue:0.722 alpha:1.00]
