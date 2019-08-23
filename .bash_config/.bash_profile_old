@@ -1,0 +1,117 @@
+# Add `~/bin` to the `$PATH`
+#export PATH="$HOME/bin:$PATH"
+
+# Load shell dotfiles like ~/.bash_promp, etc...
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don't want to commit.
+for file in ~/.bash_config/.{path,bash_prompt,exports,aliases,functions,extra}; do
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
+# Case-insensitive globbing (used in pathname expansion)
+# shopt -s nocaseglob;
+
+
+# osascript -e 'tell app "System Events" to keystroke "f" using {control down, command down}'
+# Original Bash Settings
+# export PATH="/usr/local/bin:$PATH"
+# export PATH="/usr/local/sbin:$PATH"
+
+# 'ls' with colors
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+#export LSCOLORS=ExxxxxDxBxegedabxxacad
+# export LSCOLORS=ExFxCxDxBxegedabagacad
+
+
+
+# Load RVM into a shell session.
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Git diff
+# function git_diff() {
+#  git diff --no-ext-diff -w "$@" | vim -R -
+# }
+ 
+# MacPorts
+#export PATH=$HOME/bin:/opt/local/bin:/opt/local/sbin:$PATH
+
+# MacPorts: To use bash_completion, add the following lines at the end of your .bash_profile:
+#if [ -f /opt/local/etc/bash_completion ]; then
+#    . /opt/local/etc/bash_completion
+#fi
+
+# export PATH=/usr/local/git/bin:/usr/local/bin:$PATH
+
+
+# cows[1]=beavis.zen
+# cows[2]=bong
+# cows[3]=bud-frogs
+# cows[4]=bunny
+# cows[5]=cheese
+# cows[6]=cower
+# cows[7]=daemon
+# cows[8]=default
+# cows[9]=dragon
+# cows[10]=dragon-and-cow
+# cows[11]=elephant
+# cows[12]=elephant-in-snake
+# cows[13]=eyes
+# cows[14]=flaming-sheep
+# cows[15]=ghostbusters
+# cows[16]=head-in
+# cows[17]=hellokitty
+# cows[18]=kiss
+# cows[19]=kitty
+# cows[20]=koala
+# cows[21]=kosh
+
+# cows[22]=luke-koala
+# cows[23]=meow
+# cows[24]=milk
+# cows[25]=moofasa
+# cows[26]=moose
+# cows[27]=mutilated
+# cows[28]=ren
+# cows[29]=satanic
+# cows[30]=sheep
+# cows[31]=skeleton
+# cows[32]=small
+# cows[33]=sodomized
+# cows[34]=stegosaurus
+# cows[35]=stimpy
+# cows[36]=supermilker
+# cows[37]=surgery
+# cows[38]=telebears
+# cows[39]=three-eyes
+# cows[40]=turkey
+# cows[41]=turtle
+# cows[42]=tux
+# cows[43]=udder
+# cows[44]=vader
+# cows[45]=vader-koala
+# cows[46]=www
+
+# declare -i MAX=${#cows[@]}
+# if [ ! $MAX -gt 0 ]; then
+  # MAX=6
+# fi
+
+echo "Hello Scotty, the time is $(date "+%k:%M, on %A, %d of %B, %Y.")"
+# cowsay -f ${cows[$[ ( $RANDOM % $MAX )  + 1 ]]} `fortune`
+#cowsay -f stegosaurus "$(fortune -s)"
+
+# export NVM_DIR="/Users/scottvg/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#if [ -f ~/.bashrc ]; then
+#source ~/.bashrc
+#fi
+
+# chsh -s /bin/bash
+# chsh -s /bin/zsh
+
+# export PATH="/usr/local/bin:$PATH"
+
+# export PATH="/usr/local/bin:$PATH"
