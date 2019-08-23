@@ -1,5 +1,5 @@
 # .dotfiles
-![License](https://img.shields.io/github/license/scottyvg/dotfiles.svg)(https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/github/license/scottyvg/dotfiles.svg)](https://opensource.org/licenses/MIT)
 ![GitHub top language](https://img.shields.io/github/languages/top/scottyvg/dotfiles.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/scottyvg/dotfiles.svg)
 
