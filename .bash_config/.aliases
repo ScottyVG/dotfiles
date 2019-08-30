@@ -41,10 +41,12 @@ fi
 # List all files colorized in long format
 alias lf="ls -lF ${colorflag}"
 
-alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
+# Preferred 'ls' implementation
+alias ll='ls -FGlAhp'
 
 # List all files colorized in long format, including dot files
-alias l="ls -laF ${colorflag}"
+alias l="ls -hal ${colorflag}"
+#alias l="ls -laF ${colorflag}"
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
@@ -100,7 +102,7 @@ alias cp='cp -v'
 alias listnpm='npm list -g --depth=0'
 
 # History
-alias h='history 10'
+alias h='history 33'
 
 # File size
 alias fs="stat -f \"%z bytes\""
@@ -123,21 +125,20 @@ alias bud='brew update && brew doctor'
 
 ###
 # GIT STUFF
-alias push="git push"
+# I feel pretty meh about this one...
+#alias push="git push"
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
-alias logx='git log --graph --oneline --all'
+alias gitlog='git log --graph --oneline --all'
 alias gs='git status'
 
 ###
-# Sounds True
+# Front End Stuff
 alias cw='cd css/sass/ && compass watch'
-# MAMP Host Files
+# Edit MAMP Host Files and Local Host
 alias mamp-host='code /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf /private/etc/hosts'
-alias microsites="cd /Applications/MAMP/htdocs/mage-cms/microsites/"
-alias htdocs="cd /Applications/MAMP/htdocs/"
 
 # dotfiles + git
 # from https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
@@ -147,7 +148,4 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
 
 # Shit added on the fly
-alias vps='ssh -i ~/.ssh/vps.pem root@178.128.191.21'
-alias u02='ssh scottvg@utility02.soundstrue.com'
-
 

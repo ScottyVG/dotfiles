@@ -50,7 +50,7 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " shortcut to convert rem to px and px to rem in css file
-" NEEDS SOME REFACTORING LOVE
+" NEEDS SOME REFACTORING LOVE - Fuck it - who does frontend anyway... LOL
 """"for converting px to rem""""
 nnoremap <Leader>rem :%s;\<\(\d*\)px;\= float2nr(submatch(1) / 16.0) . "rem";
 """"for converting rem to px"""

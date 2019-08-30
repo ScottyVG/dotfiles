@@ -6,6 +6,9 @@ for file in ~/.bash_config/.{path,bash_prompt,exports,aliases,functions,extra}; 
 done;
 unset file;
 
+# bash vi - cuz bash vi is AWESOME!
+set -o vi
+
 # added by Anaconda3 5.2.0 installer
 export PATH="/Users/scottvg/anaconda3/bin:$PATH"
 export KUBECONFIG=~/.kube/kube-config-eks

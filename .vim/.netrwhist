@@ -1,3 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/Users/scottvg/Downloads'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/scott.vangilder'
+let g:netrw_dirhist_2='/Users/scott.vangilder/.kube'
+let g:netrw_dirhist_3='/Users/scott.vangilder'
+let g:netrw_dirhist_4='/Users/scott.vangilder/.bash_config'
+let g:netrw_dirhist_5='/Users/scott.vangilder'
+let g:netrw_dirhist_6='/Users/scott.vangilder/.vim'
+let g:netrw_dirhist_7='/Users/scott.vangilder/.vim/startup'
+let g:netrw_dirhist_8='/Users/scott.vangilder/.vim/startup/syntax'
