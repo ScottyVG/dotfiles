@@ -13,21 +13,20 @@ alias -- -="cd -"
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias notes="cd ~/dev/notes"
-alias dev="cd ~/dev"
+alias notes="cd ~/notes"
 alias org="cd ~/org"
 
 # Repos
-alias code-challenges="cd /Users/scottvg/dev/code-challenges"
-alias code-wars="cd /Users/scottvg/dev/code-challenges/code-wars"
+alias code-challenges="cd /Users/scott.vangilder/dev/code-challenges"
+alias code-wars="cd /Users/scott.vangilder/dev/code-challenges/code-wars"
 
 # bash configs
-alias v-bp="vim /Users/scottvg/.bash_profile"
-alias v-a="vim /Users/scottvg/.bash_config/.aliases"
-alias v-p="vim /Users/scottvg/.bash_config/.bash_prompt"
-alias v-e="vim /Users/scottvg/.bash_config/.extra"
-alias v-f="vim /Users/scottvg/.bash_config/.functions"
-alias v-p="vim /Users/scottvg/.bash_config/.path"
+alias v-bp="vim /Users/scott.vangilder/.bash_profile"
+alias v-a="vim /Users/scott.vangilder/.bash_config/.aliases"
+alias v-p="vim /Users/scott.vangilder/.bash_config/.bash_prompt"
+alias v-e="vim /Users/scott.vangilder/.bash_config/.extra"
+alias v-f="vim /Users/scott.vangilder/.bash_config/.functions"
+alias v-p="vim /Users/scott.vangilder/.bash_config/.path"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -65,6 +64,11 @@ trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the 
 alias g="git"
 alias v="vim"
 alias vv="vim ."
+
+# kubectl stuffs
+source <(kubectl completion bash)
+alias k=kubectl
+#complete -F __start_kubectl k
 
 ###
 # Node modules
@@ -112,8 +116,8 @@ alias emptytrash=" \
     sudo rm -rfv /Volumes/*/.Trashes; \
     rm -rfv ~/.Trash/*; \
     sudo rm -v /private/var/vm/sleepimage; \
-    rm -rv \"/Users/scottvg/Library/Application Support/stremio/Cache\";  \
-    rm -rv \"/Users/scottvg/Library/Application Support/stremio/stremio-cache\" \
+    rm -rv \"/Users/scott.vangilder/Library/Application Support/stremio/Cache\";  \
+    rm -rv \"/Users/scott.vangilder/Library/Application Support/stremio/stremio-cache\" \
 "
 
 # Update installed Ruby gems, Homebrew, npm, and their installed packages
@@ -148,4 +152,12 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
 
 # Shit added on the fly
+#alias vps='ssh -i ~/.ssh/vps.pem root@178.128.191.21'
+alias vps='ssh -i ~/.ssh/ec2-key-pair-personal-use.pem ec2-user@3.84.82.83'
+alias u02='ssh scottvg@utility02.soundstrue.com'
+
+###
+# Kubectl fast stuff
+alias kstaging='cp /Users/scott.vangilder/.aws/credentials.aws-st-admin-development /Users/scott.vangilder/.aws/credentials && cp /Users/scott.vangilder/.aws/config.aws-st-admin-development /Users/scott.vangilder/.aws/config && kubectx ServiceEKSDev@prepforprod.us-east-1.eksctl.io'
+alias kprod='cp /Users/scott.vangilder/.aws/credentials.aws-st-admin-production /Users/scott.vangilder/.aws/credentials && cp /Users/scott.vangilder/.aws/config.aws-st-admin-production /Users/scott.vangilder/.aws/config && kubectx eks-admin@customerhub-digitallibrary-production.us-east-1.eksctl.io'
 
