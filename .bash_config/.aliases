@@ -13,13 +13,13 @@ alias -- -="cd -"
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias notes="cd ~/dev/notes"
-alias dev="cd ~/dev"
-alias org="cd ~/org"
+#alias notes="cd ~/dev/notes"
+#alias dev="cd ~/dev"
+#alias org="cd ~/org"
 
 # Repos
-alias code-challenges="cd /Users/scottvg/dev/code-challenges"
-alias code-wars="cd /Users/scottvg/dev/code-challenges/code-wars"
+#alias code-challenges="cd /Users/scottvg/dev/code-challenges"
+#alias code-wars="cd /Users/scottvg/dev/code-challenges/code-wars"
 
 # bash configs
 alias v-bp="vim /Users/scottvg/.bash_profile"
@@ -100,7 +100,7 @@ alias cp='cp -v'
 alias listnpm='npm list -g --depth=0'
 
 # History
-alias h='history 10'
+alias h='history 20'
 
 # File size
 alias fs="stat -f \"%z bytes\""
@@ -115,8 +115,8 @@ alias emptytrash=" \
 "
 
 # Update installed Ruby gems, Homebrew, npm, and their installed packages
-alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
-alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-document'
+#alias brew_update="brew -v update; brew upgrade --force-bottle --cleanup; brew cleanup; brew cask cleanup; brew prune; brew doctor; npm-check -g -u"
+#alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-document'
 
 # Brew
 alias bud='brew update && brew doctor'
@@ -133,11 +133,11 @@ alias gs='git status'
 
 ###
 # Sounds True
-alias cw='cd css/sass/ && compass watch'
+#alias cw='cd css/sass/ && compass watch'
 # MAMP Host Files
 alias mamp-host='code /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf /private/etc/hosts'
-alias microsites="cd /Applications/MAMP/htdocs/mage-cms/microsites/"
-alias htdocs="cd /Applications/MAMP/htdocs/"
+#alias microsites="cd /Applications/MAMP/htdocs/mage-cms/microsites/"
+#alias htdocs="cd /Applications/MAMP/htdocs/"
 
 # dotfiles + git
 # from https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
@@ -147,7 +147,5 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
 
 # Shit added on the fly
-alias vps='ssh -i ~/.ssh/vps.pem root@178.128.191.21'
-alias u02='ssh scottvg@utility02.soundstrue.com'
 
 
