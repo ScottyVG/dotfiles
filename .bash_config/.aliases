@@ -129,7 +129,7 @@ alias push="git push"
 alias undopush="git push -f origin HEAD^:master"
 
 alias logx='git log --graph --oneline --all'
-alias gs='git status'
+#alias gs='git status'
 
 ###
 # Sounds True
@@ -148,4 +148,4 @@ dotfiles config --local status.showUntrackedFiles no
 
 # Shit added on the fly
 
-
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
