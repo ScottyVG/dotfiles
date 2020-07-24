@@ -108,3 +108,9 @@ or
 81,126,184
 [NSColor colorWithCalibratedRed:0.320 green:0.496 blue:0.722 alpha:1.00]
 [UIColor colorWithRed:0.318 green:0.494 blue:0.722 alpha:1.00]
+
+## OMG I need to refactor this README...
+
+## Vim
+[Vundle](https://github.com/VundleVim/Vundle.vim)
+[badwolf](https://raw.githubusercontent.com/sjl/badwolf/master/colors/badwolf.vim)
