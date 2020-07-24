@@ -15,6 +15,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias notes="cd ~/notes"
 alias org="cd ~/org"
+alias kata="cd ~/repos/kata"
 
 # Repos
 alias code-challenges="cd /Users/scott.vangilder/dev/code-challenges"
@@ -152,12 +153,15 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config --local status.showUntrackedFiles no
 
 # Shit added on the fly
-#alias vps='ssh -i ~/.ssh/vps.pem root@178.128.191.21'
-alias vps='ssh -i ~/.ssh/ec2-key-pair-personal-use.pem ec2-user@3.84.82.83'
-alias u02='ssh scottvg@utility02.soundstrue.com'
 
 ###
 # Kubectl fast stuff
-alias kstaging='cp /Users/scott.vangilder/.aws/credentials.aws-st-admin-development /Users/scott.vangilder/.aws/credentials && cp /Users/scott.vangilder/.aws/config.aws-st-admin-development /Users/scott.vangilder/.aws/config && kubectx ServiceEKSDev@prepforprod.us-east-1.eksctl.io'
-alias kprod='cp /Users/scott.vangilder/.aws/credentials.aws-st-admin-production /Users/scott.vangilder/.aws/credentials && cp /Users/scott.vangilder/.aws/config.aws-st-admin-production /Users/scott.vangilder/.aws/config && kubectx eks-admin@customerhub-digitallibrary-production.us-east-1.eksctl.io'
+
+alias kstaging14='cp /Users/scott.vangilder/.aws/credentials.aws-st-admin-development /Users/scott.vangilder/.aws/credentials && cp /Users/scott.vangilder/.aws/config.aws-st-admin-development /Users/scott.vangilder/.aws/config && kubectx ServiceEKSDev@prepforprod.us-east-1.eksctl.io'
+alias kprod14='cp /Users/scott.vangilder/.aws/credentials.aws-st-admin-production /Users/scott.vangilder/.aws/credentials && cp /Users/scott.vangilder/.aws/config.aws-st-admin-production /Users/scott.vangilder/.aws/config && kubectx eks-admin@customerhub-digitallibrary-production.us-east-1.eksctl.io'
+
+alias kstaging15='cp /Users/scott.vangilder/.aws/credentials.aws-st-admin-development /Users/scott.vangilder/.aws/credentials && cp /Users/scott.vangilder/.aws/config.aws-st-admin-development /Users/scott.vangilder/.aws/config && kubectx ServiceEKSDev@staging-development.us-east-1.eksctl.io'
+alias kprod15='cp /Users/scott.vangilder/.aws/credentials.aws-st-admin-production /Users/scott.vangilder/.aws/credentials && cp /Users/scott.vangilder/.aws/config.aws-st-admin-production /Users/scott.vangilder/.aws/config && kubectx ServiceEKSDev@production-cluster-1-15.us-east-1.eksctl.io'
+# alias kprod='export AWS_PROFILE=kubernetes-prod && kubectx ServiceEKSDev@prepforprod.us-east-1.eksctl.io && wait && echo AWS_PROFILE: "$AWS_PROFILE"'
+# alias kstaging='export AWS_PROFILE=kubernetes-staging && kubectx eks-admin@customerhub-digitallibrary-production.us-east-1.eksctl.io && wait && echo AWS_PROFILE: "$AWS_PROFILE"'
 
