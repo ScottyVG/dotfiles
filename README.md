@@ -114,3 +114,5 @@ or
 ## Vim
 [Vundle](https://github.com/VundleVim/Vundle.vim)
 [badwolf](https://raw.githubusercontent.com/sjl/badwolf/master/colors/badwolf.vim)
+
+[mac-setup](https://sourabhbajaj.com/mac-setup/)
